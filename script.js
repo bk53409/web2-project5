@@ -44,3 +44,28 @@ if ('serviceWorker' in navigator) {
             console.error('Service Worker registration failed:', error);
         });
 }
+
+document.getElementById('uploadButton').addEventListener('click', () => {
+    const fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.accept = 'image/*'; 
+    fileInput.click();
+    fileInput.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            displayImage(file);
+        }
+    });
+});
+
+function displayImage(file) {
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+        const capturedImageElement = document.getElementById('capturedImage');
+        capturedImageElement.src = e.target.result;
+        capturedImageElement.style.display = 'block';
+    };
+
+    reader.readAsDataURL(file);
+}
