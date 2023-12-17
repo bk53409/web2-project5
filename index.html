@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakini recepti</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h1>BAKINI RECEPTI ZA BLAGDANE</h1>
+    <p>Želite li zabilježiti stari recept Vaše bake ili pokazati kako ste servirali slastice ili druga jela. Potrebno je samo upaliti kameru i uslikati. 
+    </p>
+    <p>Također receptu možete dodijeliti ime te sastojke napisati u područje predviđeno za upis.
+    </p>
+
+    <form id="recipeForm">
+        <label for="recipeName">Naziv recepta:</label>
+        <input type="text" id="recipeName" name="recipeName">
+    
+        <label for="recipeIngredients">Sastojci:</label>
+        <textarea id="recipeIngredients" name="recipeIngredients" rows="4"></textarea>
+    
+        <button type="button" class="btn btn-primary" id="submitRecipe">Objavi recept</button>
+    </form>
+
+    <div id="videoContainer"></div>
+    <img id="capturedImage">
+
+    <div id="cameraButtons">
+        <button type="button" class="btn btn-success m-2" id="startButton">Upali kameru</button>
+        <button type="button" class="btn btn-light m-2" id="captureButton">Uslikaj</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="sw.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+Potrebno je izraditi progresivnu web-aplikaciju. Tematika je proizvoljna.
+
+Aplikacija treba:
+
+1. koristiti neki native API (camera, microphone, bluetooth, …) osim već isprobanog geo API-ja
+* pogledajte npr. https://whatpwacando.today/
+RIJEŠENO
+
+2. biti installable
+RIJEŠENO
+
+3. imati barem jednu cacheing strategiju
+
+4. offline rad barem za app shell
+
+5. background sync
+
+6. push notifikacija (npr. nakon što prođe bg sync možete poslati push notif)
+
+7. demonstrirati barem na jednom primjeru progressive enhancement/gracefull degradation
+
+Također:
+
+Aplikaciju postaviti na Render ili neki sličan servis
+Ciljani preglednik je Google Chrome i on će biti korišten kod ocjenjivanja projekata
+U console ne smije biti grešaka ili upozorenja (errors, warnings)
+Smijete uzimati odsječke koda iz predavanja, ali aplikacija ne smije biti previše slična aplikaciji iz predavanja.

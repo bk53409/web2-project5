@@ -1,0 +1,16 @@
+{
+    "name": "Bakini recept za Božić",
+    "short_name": "Božićni recepti",
+    "description": "Dodavanje starinskih bakinih recepata",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#D10000",
+    "theme_color": "#D10000",
+    "icons": [
+      {
+        "src": "icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
